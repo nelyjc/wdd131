@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131- Dynamic Web Fundamentals - Your Name".</title>
+    <title>WDD 131- Dynamic Web Fundamentals - Nely Crespin".</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals- Nely Crespin - Home Page">  
     <meta name="author" content="Nely Crespin"> 
     <link rel="stylesheet" href="styles/base.css">
@@ -30,14 +30,25 @@
     </section>
 
     <section class="card">
-      <h2>City Adventures</h2>
-      <img src="city.jpg" alt="Vibrant city life" width="300">
-      <p>Dive into the hustle and bustle of the city with its rich culture and nightlife.</p>
+      <h2>Mexico</h2>
+      <img src="/images/Jalisco-Front-01.jpeg" alt="Mexico" width="300">
+      <p>Jalisco, Mexico is the birthplace of Mariachi Music, Mexican hat dance, tequila, Mexican Rodeos, and the wide brimmed sombrero. Jalisco also manufactures 60% of the country's computers. 
+        It has a very vibrant culture and people. The state's most popular tourist location is called Puerto Vallarta. 
+
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; <span id="currentyear"></span> Nely, USA.</p>
+    <p id="lastModified"></p>
   </footer>
+
+  <script>
+    // Set current year
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Set last modified date
+    document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+  </script>
 </body>
 </html>
