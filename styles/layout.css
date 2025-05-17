@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
@@ -26,6 +26,8 @@ header {
 nav {
   background-color: #c0bcbc;
   border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  
 }
 nav ul {
   display: flex;
