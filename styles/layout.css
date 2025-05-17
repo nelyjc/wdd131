@@ -24,15 +24,27 @@ header {
 
 /* Navigation Bar */
 nav {
-  background-color: #c0bcbc;
+  background-color: #301e4d;
   border-radius: 10px;
   font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex
   
 }
+nav a:hover {
+	text-decoration: overline;
+}
+
+.active {
+	color: rgb(10, 137, 187);
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  font-size: 1.5rem;
   border-radius: 10px;
 }
 nav ul li a 
@@ -58,6 +70,7 @@ main {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: grid
 }
 
 /* Footer */
