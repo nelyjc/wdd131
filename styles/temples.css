@@ -13,6 +13,11 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 nav {
   background-color: #180135; 
   color: white;
@@ -23,11 +28,23 @@ nav {
   gap: 1rem;
   flex-wrap: wrap;
 }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  display: block;
 }
 
 nav a:hover {
