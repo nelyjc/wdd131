@@ -1,32 +1,27 @@
-.temples {
-	font-weight: 700;border-bottom: 1px solid #777; margin-bottom: 1rem;
+header, footer {
+  background-color: #4B0082; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font: Roboto;
 }
-
-body {font-family: Roboto, sans-serif;}
-h1 {font-size: 2.5rem; padding: 1rem;background-color: #333;text-align: center;font-family: 'Acme', Arial, sans-serif; color:#fff;}
-h2 {font-size: 2rem;}
-h3 {font-size: 1.5rem; color: darkgreen;}
-section {margin: 1rem auto; max-width: 960px; padding: .5rem;}
-.container {display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 25px;place-items: center;}
-
-figure {background-color:#fff;}
-img { width: 100%; height: auto; margin: .5rem;}
-figcaption {font-size: smaller;}
-/* hover effect */
-.hover:hover {box-shadow: 0 0 50px #333;}
-/* rounded corners - boxmodel */
-		
-.pic {
-	background: #fff;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 7px;
-	mix-blend-mode: lighten; /* try darken and overlay */
-	position: absolute;
-	top: 0;
-	width: 100%;
+.nav{
 
 }
-.pic div {background: #000;	height: 18.5vw;	max-height: 640px;}
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+nav a:hover 
+{
 
-.pic div:nth-of-type(3), .pic div:nth-of-type(8), .pic div:nth-of-type(13)  {	grid-column: 3/5; }
+}
