@@ -1,34 +1,32 @@
-header, footer {
-  background-color: #4B0082; 
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  font-family: 'Roboto', sans-serif;
+header {
+    background-color: #5a4e85; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 nav {
+  background-color: #180135; 
+  color: white;
+  padding: 10px 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.nav a {
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 nav a:hover {
   background-color: #bbb;
   color: #333;
-  font-weight: 700;
-}
-
-main { 
-  max-width: 800px;
-  margin: 0 auto;
+  font-weight: bold;
 }
 
 .gallery {
@@ -43,4 +41,16 @@ img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+footer {
+    background-color: #5a4e85; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 5px 0;
 }
