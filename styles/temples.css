@@ -5,15 +5,32 @@ header, footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  font: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
-.nav{
 
+nav {
+  display: flex;
+  gap: 1rem;
 }
+
+.nav a {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
+}
+
 main { 
   max-width: 800px;
   margin: 0 auto;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -21,7 +38,9 @@ main {
   padding: 2rem;
   text-align: center;
 }
-nav a:hover 
-{
 
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
