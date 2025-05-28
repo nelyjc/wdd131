@@ -29,9 +29,9 @@ header {
   background-color: var(--primary-color);
   border-bottom: 3px solid var(--accent-color);
 }
-/* --- Header --- */
+/* --- Header Banner (Top Title) --- */
 header {
-    background-color: #cacaca; /* red tone like Madagascar example */
+    background-color: #cacaca; 
     color: rgb(3, 104, 122);
     padding: 20px 0;
     font-size: 2.2em;
@@ -46,7 +46,7 @@ header {
 /* --- Background Container --- */
 .place-container {
     position: relative;
-    background-image: url('../images/maui.jpg'); /* ✅ Replace with actual Maui image path */
+    background-image: url('../images/maui-weather-nice.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,17 +139,8 @@ footer p {
     .place-container {
         padding: 20px;
     }
-}
 
-/* --- Optional Hero Image Styling (if used elsewhere) --- */
-.hero img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+
 
 /* --- Utility --- */
 .text-center {
