@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place</title>
-    <meta name="author" content="Nely Crespin">
-    <meta name="description" content="Visit Hawaii">
-    <link rel= "stylesheet" href="styles/place.css">
-    <link rel= "stylesheet" href="styles/place-large.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Maui, Hawaii</title>
+  <meta name="author" content="Nely Crespin" />
+  <meta name="description" content="Learn about Maui, Hawaii - geography, weather, and more." />
+  
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css" />
+  <script src="scripts/place.js" defer></script>
 
-    <script src="scripts/place.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
-<header>
-    <div class="header-banner">
-        <h1>Maui, Hawaii</h1>
-    </div>
-</header>
+
 <body>
-<main>
+  <header>
+      <h1>Maui, Hawaii</h1>
+  </header>
+
+  <main>
     <div class="place-container">
-    <div class="data-area">
+      <div class="data-area">
         <h4>Data</h4>
         <ul>
-            <li><strong>Area:</strong> 1,883.5 sq km</li>
-            <li><strong>Population:</strong> 164,000</li>
-            <li><strong>Main City:</strong> Kahului</li>
-            <li><strong>Languages:</strong> English, Hawaiian</li>
-            <li><strong>Currency:</strong> US Dollar</li>
-            <li><strong>Time Zone:</strong> UTC-10</li>
-            <li><strong>Calling Code:</strong> +1 (808)</li>
-            <li><strong>Internet TLD:</strong> .us</li>
+          <li><strong>Area:</strong> 1,883.5 sq km</li>
+          <li><strong>Population:</strong> 164,000</li>
+          <li><strong>Main City:</strong> Kahului</li>
+          <li><strong>Languages:</strong> English, Hawaiian</li>
+          <li><strong>Currency:</strong> US Dollar</li>
+          <li><strong>Time Zone:</strong> UTC-10</li>
+          <li><strong>Calling Code:</strong> +1 (808)</li>
+          <li><strong>Internet TLD:</strong> .us</li>
         </ul>
-    </div>
-    <div class="weather-area">
-        <h4>Weather</h4>
-        <p><strong>Temperature:</strong> 27 °C</p>
-        <p><strong>Conditions:</strong> Sunny</p>
-        <p><strong>Wind:</strong> 12 km/h</p>
-        <p><strong>Wind Chill:</strong> 26 °C</p>
-    </div>
-</div>
-</main>
+      </div>
 
-<footer>
-  <p>&copy; <span id="currentyear"></span> 🌺 Nely Crespin</p>
-  <p>Last Modification: <span id="lastModified"></span></p>
-</footer>
+      <div class="weather-area">
+        <h4>Weather</h4>
+        <p><strong>Temperature:</strong> <span id="temp">27</span> °C</p>
+        <p><strong>Conditions:</strong> Sunny</p>
+        <p><strong>Wind:</strong> <span id="speed">12</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌺 Nely Crespin</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>

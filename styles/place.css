@@ -20,14 +20,17 @@ h1::after {
   
 }
 h1, h2, h3, h4 {
-    color: #2c3e50;
+    color: #ffffff;
 }
+ h4 {
+    color: #000000;
+ }
 header {
   background-color: var(--primary-color);
   border-bottom: 3px solid var(--accent-color);
 }
-/* --- Header Banner (Top Title) --- */
-.header-banner {
+/* --- Header --- */
+header {
     background-color: #cacaca; /* red tone like Madagascar example */
     color: rgb(3, 104, 122);
     padding: 20px 0;
@@ -35,7 +38,10 @@ header {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
 }
+
 
 /* --- Background Container --- */
 .place-container {
