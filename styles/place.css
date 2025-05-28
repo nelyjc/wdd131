@@ -1,8 +1,12 @@
 /* styles/place.css */
 
-/* --- General Body and Typography --- */
+/* --- General Body--- */
+:root {
+  --primary-color: #347a80;
+  --accent-color: #2980b9;
+}
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,10 +14,18 @@ body {
     color: #333;
 }
 
+h1::after {
+  content: " 🌴";
+  color: var(--accent-color);
+  
+}
 h1, h2, h3, h4 {
     color: #2c3e50;
 }
-
+header {
+  background-color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+}
 /* --- Header Banner (Top Title) --- */
 .header-banner {
     background-color: #cacaca; /* red tone like Madagascar example */
