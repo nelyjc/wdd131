@@ -4,9 +4,10 @@
 :root {
   --primary-color: #347a80;
   --accent-color: #2980b9;
+  font-family: "Roboto", sans-serif;
 }
 body {
-    font-family: "Roboto", sans-serif;
+    
     line-height: 1.6;
     margin: 0;
     padding: 0;
