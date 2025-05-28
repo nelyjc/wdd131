@@ -1,0 +1,139 @@
+/* styles/place.css */
+
+/* --- General Body and Typography --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
+
+/* --- Header Banner (Top Title) --- */
+.header-banner {
+    background-color: #cacaca; /* red tone like Madagascar example */
+    color: rgb(3, 104, 122);
+    padding: 20px 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* --- Background Container --- */
+.place-container {
+    position: relative;
+    background-image: url('../images/maui.jpg'); /* ✅ Replace with actual Maui image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+/* --- Floating Data & Weather Panels --- */
+.data-area, .weather-area {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    position: absolute;
+}
+
+.data-area {
+    top: 30%;
+    left: 5%;
+}
+
+.weather-area {
+    top: 30%;
+    right: 5%;
+}
+
+.data-area h4, .weather-area h4 {
+    margin-top: 0;
+    font-size: 1.3em;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.data-area ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-area ul li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.data-area ul li strong {
+    color: #2980b9;
+}
+
+#weather-info p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+#weather-info p strong {
+    min-width: 100px;
+    display: inline-block;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #002421;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5em 1em;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .data-area,
+    .weather-area {
+        position: static;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .place-container {
+        padding: 20px;
+    }
+}
+
+/* --- Optional Hero Image Styling (if used elsewhere) --- */
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Utility --- */
+.text-center {
+    text-align: center;
+}
