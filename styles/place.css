@@ -59,6 +59,7 @@ header {
     text-align: center;
     color: #fff;
 }
+<<<<<<< HEAD
 .image-area {
     margin-bottom: 2rem;
     text-align: center;
@@ -71,6 +72,8 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+=======
+>>>>>>> 45533d3ce19ca5e923b1cb35546abdfb4f0ca334
 
 /* --- Floating Data & Weather Panels --- */
 .data-area, .weather-area {
