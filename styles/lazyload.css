@@ -1,0 +1,69 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+main {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 2rem auto;
+  width: 400px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add slight zoom on hover */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Fade-in from black animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
