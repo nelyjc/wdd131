@@ -54,21 +54,21 @@ const temples = [
     location: "Provo, Utah, United States",
     dedicated: "2016, March, 20",
     area: 85000,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/57d9b6d6a07f11ed8c7efb6d07d7c46e0888b6f1/full/320%2C/0/default"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/1200x1200/Provo-City-Center-Temple12.jpg"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 40000,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/816abf5d4e7b11ed8919eeeeac1e60e0b2b9e606/full/320%2C/0/default"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/1280x800/4-Rome-Temple-2160935.jpg"
   },
   {
     templeName: "Salt Lake Temple",
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/0c60dcfd9f0c11edb505eeeeac1e60e0b2b9e606/full/320%2C/0/default"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/1280x800/slctemple7.jpg"
   }
 ];
 
