@@ -66,6 +66,27 @@ img {
   height: auto;
   border-radius: 8px;
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.cards section {
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
 
 footer {
     background-color: #5a4e85; 
@@ -74,6 +95,7 @@ footer {
     padding: 10px;
     font-size: 1em;
 }
+
 
 footer p {
     margin: 5px 0;
