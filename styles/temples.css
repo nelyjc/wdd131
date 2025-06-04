@@ -17,7 +17,16 @@ header {
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+.menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 10px;
+}
 nav {
   background-color: #180135; 
   color: white;

@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
     <meta name="author" content="Nely Crespin">
-    <meta name="description" content="A list of temples" >
+    <meta name="description" content="A list of temples">
+
     <link rel= "stylesheet" href="styles/temples.css">
     <link rel= "stylesheet" href="styles/temples-large.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <script src="/scripts/temples.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Temple</h1>
-      <nav>
+    <h1>Temples</h1>
+    <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="navigation">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Old</a></li>
@@ -70,7 +74,7 @@
       <figcaption>Temple10</figcaption>
     </figure>
   </div>
-  </section>
+  
 </main>
   <footer>
     <p>&copy; <span id="currentyear"></span> Nely, USA.</p>
