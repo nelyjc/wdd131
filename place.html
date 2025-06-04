@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maui, Hawaii</title>
   <meta name="author" content="Nely Crespin" />
-  <meta name="description" content="Learn about Maui, Hawaii - geography, weather, and more." />
+  <meta name="description" content="Learn about Maui, Hawaii - geography, weather, and more.">
 
-  <link rel="stylesheet" href="styles/place.css" />
-  <link rel="stylesheet" href="styles/place-large.css" />
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
   <script src="scripts/place.js" defer></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,25 +23,9 @@
 
   <main>
     <div class="place-container">
-      <!-- Responsive Optimized Image -->
-      <div class="image-area">
-        <picture>
-          <source srcset="images/maui.webp" type="image/webp" />
-          <img
-            src="images/Maui.jpg"
-            srcset="images/Maui.jpg 600w, images/Maui.jpg 1200w"
-            sizes="(max-width: 600px) 600px, 1200px"
-            alt="A scenic view of Maui, Hawaii"
-            loading="lazy"
-            width="600"
-            height="400"
-          />
-        </picture>
-      </div>
-
       <!-- Data Section -->
-      <div class="data-area">
-        <h4>Data</h4>
+    <div class="data-area">
+      <h4>Data</h4>
         <ul>
           <li><strong>Area:</strong> 1,883.5 sq km</li>
           <li><strong>Population:</strong> 164,000</li>
@@ -52,16 +36,18 @@
           <li><strong>Calling Code:</strong> +1 (808)</li>
           <li><strong>Internet TLD:</strong> .us</li>
         </ul>
-      </div>
+    </div>
 
       <!-- Weather Section -->
-      <div class="weather-area">
-        <h4>Weather</h4>
-        <p><strong>Temperature:</strong> <span id="temp">27</span> °C</p>
-        <p><strong>Conditions:</strong> Sunny</p>
-        <p><strong>Wind:</strong> <span id="speed">12</span> km/h</p>
-        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
-      </div>
+    <div class="weather-area">
+      <img src="images/weater-icon.png" alt="Suny cloudy icon" width="40" height="40">
+      <h4>Weather</h4>
+      <p><strong>Temperature:</strong> <span id="temp">27</span> °C</p>
+      <p><strong>Conditions:</strong> Sunny</p>
+      <p><strong>Wind:</strong> <span id="speed">12</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+    </div>
+      
     </div>
   </main>
 
