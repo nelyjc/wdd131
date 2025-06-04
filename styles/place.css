@@ -59,7 +59,6 @@ header {
     text-align: center;
     color: #fff;
 }
-/* --- Featured Image --- */
 .image-area {
     margin-bottom: 2rem;
     text-align: center;
@@ -117,14 +116,18 @@ header {
     color: #2980b9;
 }
 
-#weather-info p {
+.weather-info p {
     margin: 5px 0;
     font-size: 0.95em;
 }
 
-#weather-info p strong {
+.weather-info p strong {
     min-width: 100px;
     display: inline-block;
+}
+.weather-area svg {
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
 /* --- Footer --- */
@@ -143,6 +146,11 @@ footer p {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
+    .place-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
     .data-area,
     .weather-area {
         position: static;
@@ -150,7 +158,8 @@ footer p {
         margin: 10px auto;
     }
 
-    .place-container {
-        padding: 20px;
+    .image-area {
+        order: -1;
+        margin-bottom: 20px;
     }
 }
