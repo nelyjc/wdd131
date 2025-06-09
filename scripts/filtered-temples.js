@@ -54,7 +54,7 @@ const temples = [
     location: "Provo, Utah, United States",
     dedicated: "2016, March, 20",
     area: 85000,
-    imageUrl: imageUrl: "https://picsum.photos/400/250"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/1200x1200/Provo-City-Center-Temple12.jpg"
   },
   {
     templeName: "Rome Italy",
