@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Review Confirmation</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      let count = Number(localStorage.getItem("reviewCount")) || 0;
-      count++;
-      localStorage.setItem("reviewCount", count);
-      document.getElementById("count").textContent = count;
+  <meta name="author" content="Nely Crespin" />
+  <meta name="description" content="Review confirmation page" />
+
+  <link rel="stylesheet" href="styles/form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      let count = localStorage.getItem('reviewCount');
+      count = count ? parseInt(count) + 1 : 1;
+      localStorage.setItem('reviewCount', count);
+      document.getElementById('reviewCount').textContent = count;
     });
   </script>
 </head>
 <body>
-  <h1>Thank you for your review!</h1>
-  <p>You have submitted <strong><span id="count"></span></strong> review(s).</p>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <p>Your product review has been submitted successfully.</p>
+    <p>You have submitted <strong><span id="reviewCount">0</span></strong> review(s).</p>
+    <a href="form.html" class="button">Submit Another Review</a>
+
+  </main>
+
   <footer>
     <p>&copy; <span id="year"></span> Nely, USA.</p>
     <p id="lastModified"></p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+    </script>
   </footer>
-
 </body>
 </html>
