@@ -10,14 +10,8 @@
   <link rel="stylesheet" href="styles/form.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
 
-  <script defer>
-    document.addEventListener('DOMContentLoaded', () => {
-      let count = localStorage.getItem('reviewCount');
-      count = count ? parseInt(count) + 1 : 1;
-      localStorage.setItem('reviewCount', count);
-      document.getElementById('reviewCount').textContent = count;
-    });
-  </script>
+  <script src="scripts/review.js" defer></script>
+  
 </head>
 <body>
   <header>
