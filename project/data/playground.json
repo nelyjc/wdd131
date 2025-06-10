@@ -1,0 +1,22 @@
+{
+  "playgrounds": [
+    {
+      "name": "North Park Playground",
+      "address": "500 N 400 E, Provo, UT",
+      "image": "north-park.jpg",
+      "features": "Slides, Swings, Picnic Tables",
+      "website": "https://example.com/north-park",
+      "city": "Provo",
+      "description": "A fun and shaded park near downtown."
+    },
+    {
+      "name": "Spanish Fork Adventure Park",
+      "address": "100 N 200 E, Spanish Fork, UT",
+      "image": "adventure-park.jpg",
+      "features": "Zipline, Climbing Structures, Water Play",
+      "website": "https://example.com/adventure-park",
+      "city": "Spanish Fork",
+      "description": "Great for older kids and summer fun."
+    }
+  ]
+}
