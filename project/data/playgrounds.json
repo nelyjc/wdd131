@@ -35,6 +35,33 @@
       "website": "https://g.co/kgs/M8swB24",
       "city": "Provo",
       "description": "Perfect for sports and shaded play during the summer."
+    },
+     {
+      "name": "Kiwanis Park",
+      "address": "900 S 500 E, Provo, UT",
+      "image": "kiwanis-park.webp",
+      "features": "Playground, Splash Pad, Picnic Areas, Walking Trails",
+      "website": "https://goo.gl/maps/yN7aPoMrCVE2",
+      "city": "Provo",
+      "description": "A large park with plenty of shaded play areas and a splash pad to keep kids cool."
+    },
+    {
+      "name": "Discovery Park",
+      "address": "950 N 400 W, Orem, UT",
+      "image": "discovery-park.webp",
+      "features": "Playground, Splash Pad, Sports Fields, Open Grass Areas",
+      "website": "https://goo.gl/maps/jxv1Z1WUd6N2",
+      "city": "Orem",
+      "description": "Popular family park with splash pad and large playground equipment."
+    },
+    {
+      "name": "Murdock Canal Trail Park",
+      "address": "4700 W Center St, Lehi, UT",
+      "image": "murdock-canal-trail-park.webp",
+      "features": "Playground, Splash Pad, Walking and Biking Trails",
+      "website": "https://goo.gl/maps/JKrRgV4djMs",
+      "city": "Lehi",
+      "description": "Ideal for kids to play and cool off at the splash pad after biking or walking the trail."
     }
   ]
 }
