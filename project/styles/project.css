@@ -1,23 +1,67 @@
-/* styles.css (MOBILE-FIRST) */
+/* === Global Reset === */
 * {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* default fallback */
 }
 
+/* === Body === */
 body {
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif; /* per site plan */
+  background-color: #fdfaf6; /* Light Sand */
+  color: #333;
+  margin: 2rem;
+  line-height: 1.6; /* matches your site plan */
 }
 
+/* === Headings === */
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #2c5d63; /* Forest Green */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* === Section spacing === */
+.section {
+  margin-bottom: 2rem;
+}
+
+/* === Lists === */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* === Strong text === */
+strong {
+  color: #f4a261; /* Golden Yellow */
+}
+
+/* === Images === */
+img {
+  border: 2px solid #2c5d63;
+  border-radius: 6px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Header === */
 header {
   background: #fff;
   padding: 1rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  
 }
 
 .logo {
@@ -30,14 +74,16 @@ header {
   width: 50px;
   margin-right: 10px;
 }
-/* Navigation */
+
+/* === Navigation === */
 nav {
   background-color: #6faddd;
   padding: 10px 0;
   width: 100%;
 }
+
 nav a {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: inline-block;
@@ -46,25 +92,22 @@ nav a {
 
 nav a.active {
   background-color: #004455;
+  color: #ffb758;
   font-weight: bold;
-  color: #ffb758; 
-  text-decoration: solid;
 }
 
 nav ul {
-  display: none;
-  list-style: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
-
 }
 
 nav ul.open {
-  display: flex; /* Show nav menu when hamburger toggled */
+  display: flex;
 }
 
 nav li {
@@ -78,7 +121,11 @@ nav li {
   cursor: pointer;
   margin-top: 10px;
 }
-/* Hero image */
+
+/* === ... rest of your styles ... */
+
+
+/* === Hero === */
 .hero {
   width: 100%;
   display: flex;
@@ -99,10 +146,47 @@ nav li {
   cursor: pointer;
 }
 
+/* === Main Content === */
 main {
   padding: 1rem;
 }
 
+/* === Playground Cards === */
+.playground-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.playground-card {
+  background: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.playground-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.playground-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p {
+  font-style: italic;
+  font-size: larger;
+  color: #004455;
+}
+
+/* === Info Sections === */
 .info-section {
   display: flex;
   flex-direction: column;
@@ -115,6 +199,7 @@ main {
   border: 1px solid #ccc;
 }
 
+/* === Business Cards (Grid & List) === */
 .business-cards {
   display: flex;
   flex-direction: column;
@@ -130,9 +215,10 @@ main {
   max-width: 400px;
   margin: 0 auto;
 }
+
 .business-card h3 {
-  margin-top: 0.5rem;
   color: #0B2437;
+  margin-top: 0.5rem;
 }
 
 .business-card p {
@@ -143,33 +229,25 @@ main {
   color: #004455;
   text-decoration: underline;
 }
+
 .business-logo {
   width: 150px;
   height: 150px;
-  object-fit: cover; /* Keeps aspect ratio, fills box */
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 auto;
 }
 
-
-/*toggle */
-
+/* === Grid View === */
 .business-cards.grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.business-cards.grid-view .business-card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
+/* === List View === */
 .business-cards.list-view {
   display: flex;
   flex-direction: column;
@@ -180,40 +258,30 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
   text-align: left;
 }
+
 .business-cards.list-view .business-info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
-.business-logo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover; /* OR 'contain' if you prefer full image */
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-  .view-toggle-buttons button.active {
+
+/* === View Toggle Buttons === */
+.view-toggle-buttons button.active {
   background-color: #004455;
   color: white;
 }
-/* footer */
+
+/* === Footer === */
 footer {
   background: #ddd;
   padding: 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-size: 0.9rem;
   box-sizing: border-box;
-  text-align: center;
 }
-
 
 footer div {
   margin-bottom: 10px;
@@ -223,9 +291,8 @@ footer div {
   width: 30px;
   margin-right: 10px;
 }
-/* join website */
 
-/* Container for form and cards */
+/* === Join Page === */
 .join-container {
   display: flex;
   flex-wrap: wrap;
@@ -236,17 +303,14 @@ footer div {
   padding: 0 1rem;
 }
 
-
-
-/* Form styling */
+/* === Form === */
 form {
   flex: 1 1 400px;
   background-color: #fff;
-  border: 2px solid #0073e6; /* blue border */
+  border: 2px solid #0073e6;
   border-radius: 8px;
   padding: 1.5rem 2rem;
-  box-shadow: 0 4px 8px rgb(0 115 230 / 0.15);
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.15);
 }
 
 form label {
@@ -266,14 +330,10 @@ form textarea {
   border: 1.5px solid #0073e6;
   border-radius: 6px;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="tel"]:focus,
+form input:focus,
 form select:focus,
 form textarea:focus {
   border-color: #004080;
@@ -293,7 +353,6 @@ form input[type="submit"] {
   font-size: 1.1rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   margin-top: 1rem;
   font-weight: 700;
   width: 100%;
@@ -305,7 +364,7 @@ form input[type="submit"]:focus {
   outline: none;
 }
 
-/* Membership cards container */
+/* === Membership Cards ===
 .membership-cards {
   flex: 1 1 400px;
   display: grid;
@@ -313,23 +372,20 @@ form input[type="submit"]:focus {
   gap: 1.5rem;
 }
 
-/* Membership card style */
 .membership-card {
   background-color: #ffffff;
   border: 2px solid #0073e6;
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
-  box-shadow: 0 4px 8px rgb(0 115 230 / 0.15);
-  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.15);
   color: #003a75;
-  cursor: default;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.membership-card:focus,
-.membership-card:hover {
+.membership-card:hover,
+.membership-card:focus {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgb(0 115 230 / 0.3);
+  box-shadow: 0 6px 12px rgba(0, 115, 230, 0.3);
   outline: none;
 }
 
@@ -339,23 +395,22 @@ form input[type="submit"]:focus {
 }
 
 .membership-card p {
-  margin-bottom: 1rem;
   font-weight: 500;
   line-height: 1.3;
 }
-
-/* Modal open links */
+/* 
+=== Modal === */
 .open-modal {
-color: #0073e6;
-font-weight: 600;
-text-decoration: underline;
-cursor: pointer;
+  color: #0073e6;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .open-modal:hover,
 .open-modal:focus {
-color: #005bb5;
-outline: none;
+  color: #005bb5;
+  outline: none;
 }
 
 .modal {
@@ -366,17 +421,17 @@ outline: none;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
 .modal[style*="display: block"] {
-    display: flex !important;
+  display: flex !important;
 }
 
 .modal-content {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #003a75;
   padding: 1.5rem 2rem;
   border: 2px solid #0073e6;
@@ -384,22 +439,22 @@ outline: none;
   width: 90%;
   max-width: 500px;
   position: relative;
-  box-shadow: 0 6px 12px rgb(0 115 230 / 0.3);
-
+  box-shadow: 0 6px 12px rgba(0, 115, 230, 0.3);
 }
+
 .modal-content h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .modal-content ul {
-    list-style-position: inside;
-    padding-left: 0.5rem;
-    text-align: left;
+  list-style-position: inside;
+  padding-left: 0.5rem;
+  text-align: left;
 }
 
 .modal-content li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .close {
@@ -409,9 +464,8 @@ outline: none;
   right: 20px;
   font-size: 28px;
   font-weight: bold;
-  border: none;
   background: transparent;
-  padding: 0;
+  border: none;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -421,5 +475,4 @@ outline: none;
   color: #003a75;
   text-decoration: none;
   outline: none;
-}
-/*  */
+} 

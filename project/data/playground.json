@@ -17,6 +17,24 @@
       "website": "https://example.com/adventure-park",
       "city": "Spanish Fork",
       "description": "Great for older kids and summer fun."
+    },
+    {
+      "name": "Spring Creek Park",
+      "address": "1460 N 1500 W, Springville, UT",
+      "image": "spring-creek.jpg",
+      "features": "Large Shade, Splash Pad, Walking Trails",
+      "website": "https://example.com/spring-creek",
+      "city": "Springville",
+      "description": "Beautiful shady park with space to play and cool off."
+    },
+    {
+      "name": "Patriot Park",
+      "address": "2100 W 900 S, Provo, UT",
+      "image": "patriot-park.jpg",
+      "features": "Covered Playground, Baseball Fields, Concessions",
+      "website": "https://example.com/patriot-park",
+      "city": "Provo",
+      "description": "Perfect for sports and shaded play during the summer."
     }
   ]
 }
