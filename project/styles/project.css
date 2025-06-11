@@ -16,8 +16,8 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  
 }
 
 .logo {
@@ -30,20 +30,37 @@ header {
   width: 50px;
   margin-right: 10px;
 }
-
+/* Navigation */
 nav {
-  background-color: #0B2437;
+  background-color: #6faddd;
   padding: 10px 0;
   width: 100%;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 700;
+}
+
+nav a.active {
+  background-color: #004455;
+  font-weight: bold;
+  color: #ffb758; 
+  text-decoration: solid;
 }
 
 nav ul {
   display: none;
   list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+
 }
 
 nav ul.open {
@@ -54,20 +71,6 @@ nav li {
   margin: 0;
 }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-
-nav a.active {
-  background-color: #004455;
-  font-weight: bold;
-  color: #ffb758; 
-  text-decoration: solid;
-}
-
 .dark-mode-toggle {
   background: black;
   color: white;
@@ -75,7 +78,7 @@ nav a.active {
   cursor: pointer;
   margin-top: 10px;
 }
-
+/* Hero image */
 .hero {
   width: 100%;
   display: flex;
@@ -197,7 +200,7 @@ main {
   background-color: #004455;
   color: white;
 }
-
+/* footer */
 footer {
   background: #ddd;
   padding: 1rem;
@@ -419,3 +422,4 @@ outline: none;
   text-decoration: none;
   outline: none;
 }
+/*  */
