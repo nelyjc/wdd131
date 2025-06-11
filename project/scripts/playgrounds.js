@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>City:</strong> ${playground.city}</p>
         <p><strong>Features:</strong> ${playground.features}</p>
         <p>${playground.description}</p>
-        <a href="${playground.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        <a href="${playground.website}" target="_blank" rel="noopener noreferrer"> Click here for Directions</a>
       `;
 
       container.appendChild(card);
