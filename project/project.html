@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Planning Document</title>
+  <title>Shaded Playgrounds</title>
   <meta name="author" content="Nely Crespin">
-  <meta name="description" content="My Website plan">
+  <meta name="description" content="Shaded Playgrounds Home Page">
   
-  <link rel="stylesheet" href="styles/project.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
-  <script src="scripts/project.js" defer></script>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="siteplan-larger.css">
+
+  <script src="scripts/playgrounds.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
-  <script src="scripts/playground.js" defer></script>
+  <script src="scripts/questionform.js" defer></script>
 </head>
 
 <body>
@@ -49,22 +50,12 @@
       <!-- Cards will be injected here by project.js -->
     </section>
 
-    <div class="view-toggle-buttons">
-      <button id="grid-view-btn" aria-label="Grid View">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M3 3h8v8H3zm0 10h8v8H3zm10-10h8v8h-8zm0 10h8v8h-8z" />
-        </svg>
-        Grid
-      </button>
-      <button id="list-view-btn" aria-label="List View">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M3 4h18v2H3zm0 7h18v2H3zm0 7h18v2H3z" />
-        </svg>
-        List
-      </button>
     </div>
 
+    <!-- <! -- Footer --> 
     <form action="questionform.html" method="post">
+      <h1>Join our Mailing List</h1>
+      <p>We send out weekly emails with the best places to visit!</p>
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -73,6 +64,7 @@
 
       <button type="submit">Submit</button>
     </form>
+
   </main>
 
   <footer>

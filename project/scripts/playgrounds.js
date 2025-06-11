@@ -1,37 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("playground-container");
-  const gridBtn = document.getElementById("grid-view-btn");
-  const listBtn = document.getElementById("list-view-btn");
   const playgroundsURL = "data/playgrounds.json";
 
-  // Toggle View
-  if (gridBtn && listBtn && container) {
-    gridBtn.addEventListener("click", () => {
-      container.classList.add("grid-view");
-      container.classList.remove("list-view");
-      gridBtn.classList.add("active");
-      listBtn.classList.remove("active");
-    });
-
-    listBtn.addEventListener("click", () => {
-      container.classList.add("list-view");
-      container.classList.remove("grid-view");
-      listBtn.classList.add("active");
-      gridBtn.classList.remove("active");
-    });
-
-    container.classList.add("grid-view");
-    gridBtn.classList.add("active");
-  }
-
-  // Fetch and Display Playgrounds
   async function getPlaygroundsData() {
     try {
       const response = await fetch(playgroundsURL);
       if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
       const data = await response.json();
-      displayPlaygrounds(data.playgrounds);
+
+      // Take only the first 3 playgrounds
+      const featuredPlaygrounds = data.playgrounds.slice(0, 3);
+
+      displayPlaygrounds(featuredPlaygrounds);
     } catch (error) {
       console.error("Could not fetch playground data:", error);
       container.innerHTML = '<p class="error-message">Playground info unavailable. Try again later.</p>';
@@ -40,8 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayPlaygrounds(playgroundsArray) {
     if (!container) return;
-
-    container.innerHTML = ""; // clear container
+    container.innerHTML = ""; // Clear old content
 
     playgroundsArray.forEach(playground => {
       const card = document.createElement("div");
@@ -59,17 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       container.appendChild(card);
     });
-  }
-
-  // Footer Info
-  const currentYearSpan = document.getElementById("currentyear");
-  if (currentYearSpan) {
-    currentYearSpan.textContent = new Date().getFullYear();
-  }
-
-  const lastModifiedP = document.getElementById("lastModified");
-  if (lastModifiedP) {
-    lastModifiedP.textContent = `Last Updated: ${document.lastModified}`;
   }
 
   getPlaygroundsData();

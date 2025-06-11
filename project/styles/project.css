@@ -60,8 +60,6 @@ header {
   background: #fff;
   padding: 1rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .logo {
@@ -79,7 +77,8 @@ header {
 nav {
   background-color: #6faddd;
   padding: 10px 0;
-  width: 100%;
+  width: auto
+
 }
 
 nav a {
@@ -122,8 +121,6 @@ nav li {
   margin-top: 10px;
 }
 
-/* === ... rest of your styles ... */
-
 
 /* === Hero === */
 .hero {
@@ -153,18 +150,19 @@ main {
 
 /* === Playground Cards === */
 .playground-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 
 .playground-card {
-  background: #f5f5f5;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 300px;
   padding: 1rem;
-  text-align: center;
 }
 
 .playground-card img {
@@ -305,63 +303,32 @@ footer div {
 
 /* === Form === */
 form {
-  flex: 1 1 400px;
-  background-color: #fff;
-  border: 2px solid #0073e6;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.15);
-}
-
-form label {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: #003a75;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
 
 form input[type="text"],
 form input[type="email"],
-form input[type="tel"],
-form select,
-form textarea {
+form button {
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  border: 1.5px solid #0073e6;
-  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
-
-form input:focus,
-form select:focus,
-form textarea:focus {
-  border-color: #004080;
-  outline: none;
-}
-
-form textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-form input[type="submit"] {
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1rem;
-  font-weight: 700;
-  width: 100%;
-}
-
-form input[type="submit"]:hover,
-form input[type="submit"]:focus {
-  background-color: #005bb5;
-  outline: none;
+.form-confirmation {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
 }
 
 /* === Membership Cards ===
