@@ -3,7 +3,7 @@
     {
       "name": "North Park Playground",
       "address": "500 N 400 E, Provo, UT",
-      "image": "north-park.jpg",
+      "image": "north-park.webp",
       "features": "Slides, Swings, Picnic Tables",
       "website": "https://example.com/north-park",
       "city": "Provo",
@@ -12,7 +12,7 @@
     {
       "name": "Spanish Fork Adventure Park",
       "address": "100 N 200 E, Spanish Fork, UT",
-      "image": "adventure-park.jpg",
+      "image": "adventure-park.webp",
       "features": "Zipline, Climbing Structures, Water Play",
       "website": "https://example.com/adventure-park",
       "city": "Spanish Fork",
@@ -21,7 +21,7 @@
     {
       "name": "Spring Creek Park",
       "address": "1460 N 1500 W, Springville, UT",
-      "image": "springcreekpark.jpg",
+      "image": "springcreekpark.webp",
       "features": "Large Shade, Splash Pad, Walking Trails",
       "website": "https://example.com/spring-creek",
       "city": "Springville",
@@ -30,7 +30,7 @@
     {
       "name": "Patriot Park",
       "address": "2100 W 900 S, Provo, UT",
-      "image": "patriot-park.jpg",
+      "image": "patriot-park.webp",
       "features": "Covered Playground, Baseball Fields, Concessions",
       "website": "https://example.com/patriot-park",
       "city": "Provo",
